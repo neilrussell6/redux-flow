@@ -1,6 +1,6 @@
 {
   "name": "@nr6/redux-flow-tap",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Redux Flow got TAP testing",
   "keywords": [
     "javascript",
