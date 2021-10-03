@@ -1,4 +1,5 @@
 {
   "init": "initialize package",
+  "build": "build package for publishing",
   "test": "run all unit tests"
 }

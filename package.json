@@ -25,6 +25,9 @@
     "ls": "lerna ls",
     "bootstrap": "lerna bootstrap",
     "test": "lerna run test --stream --concurrency=1 -- --colors",
+    "build": "lerna run build --stream --concurrency=1 -- --colors",
+    "_publish": "lerna publish",
+    "publish": "npm-run-all test build _publish",
     "_init:all": "lerna run init --stream --concurrency=1 -- --colors",
     "_init:envs": "cp -n .env.tpl .env || true",
     "init": "npm-run-all _init:envs _init:all bootstrap",
@@ -32,6 +35,7 @@
   },
   "devDependencies": {
     "lerna": "^4.0.0",
+    "npm-run-all": "^4.1.5",
     "package-json-help": "0.0.11"
   }
 }
