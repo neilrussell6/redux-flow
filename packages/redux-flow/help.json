@@ -1,0 +1,4 @@
+{
+  "init": "initialize package",
+  "test": "run all unit tests"
+}

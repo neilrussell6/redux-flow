@@ -1,0 +1,58 @@
+{
+  "name": "@nr6/redux-flow",
+  "version": "0.0.0",
+  "description": "Redux Flow",
+  "keywords": [
+    "javascript",
+    "redux",
+    "redux flow",
+    "user flow",
+    "redux integration test",
+    "state management",
+    "react"
+  ],
+  "author": "Neil Russell <neilrussell6@gmail.com>",
+  "private": false,
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neilrussell6/redux-flow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neilrussell6/redux-flow/issues"
+  },
+  "homepage": "https://github.com/neilrussell6/redux-flow/packages/redux-flow/#readme",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "tape -r @babel/register src/**/*.test.js",
+    "_init:envs": "cp -n .env.tpl .env || true",
+    "init": "npm-run-all _init:envs",
+    "help": "package-json-help.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "@reduxjs/toolkit": "^1.6.1",
+    "js-parametrize": "^1.0.0",
+    "package-json-help": "0.0.11",
+    "redux": "^4.1.1",
+    "sinon": "^11.1.2",
+    "tape": "^5.3.1",
+    "tape-promise": "^4.0.0"
+  },
+  "dependencies": {
+    "@nr6/js-utils-array": "0.0.5",
+    "bluebird": "^3.7.2",
+    "ramda": "^0.27.1"
+  }
+}
