@@ -1,0 +1,6 @@
+{
+  "ls": "list all packages",
+  "bootstrap": "bootstrap all packages, installing all their dependencies and linking any cross-dependencies",
+  "test": "run all unit tests in all packages",
+  "init": "initialize project (including all packages)"
+}

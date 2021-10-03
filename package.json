@@ -1,0 +1,37 @@
+{
+  "name": "@nr6/redux-flow",
+  "description": "Redux Flow",
+  "keywords": [
+    "javascript",
+    "redux",
+    "redux flow",
+    "user flow",
+    "redux integration test",
+    "state management",
+    "react"
+  ],
+  "author": "Neil Russell <neilrussell6@gmail.com>",
+  "private": false,
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neilrussell6/redux-flow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neilrussell6/redux-flow/issues"
+  },
+  "homepage": "https://github.com/neilrussell6/redux-flow#readme",
+  "scripts": {
+    "ls": "lerna ls",
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test --stream --concurrency=1 -- --colors",
+    "_init:all": "lerna run init --stream --concurrency=1 -- --colors",
+    "_init:envs": "cp -n .env.tpl .env || true",
+    "init": "npm-run-all _init:envs _init:all bootstrap",
+    "help": "package-json-help.js"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "package-json-help": "0.0.11"
+  }
+}
