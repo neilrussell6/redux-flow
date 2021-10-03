@@ -2,10 +2,10 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
+var jsUtilsArray = require('@nr6/js-utils-array');
 var redux = require('redux');
 var Bluebird = require('bluebird');
 var ramda = require('ramda');
-var jsUtilsArray = require('@nr6/js-utils-array');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -148,4 +148,12 @@ const reduxFlow = ({ createRootReducer, middleware, timeout = 200, log = false }
   return Bluebird__default["default"].resolve (callback (store))
 };
 
+Object.defineProperty(exports, 'MatchSequenceMismatchError', {
+  enumerable: true,
+  get: function () { return jsUtilsArray.MatchSequenceMismatchError; }
+});
+Object.defineProperty(exports, 'MatchSequencePartialMatchError', {
+  enumerable: true,
+  get: function () { return jsUtilsArray.MatchSequencePartialMatchError; }
+});
 exports.reduxFlow = reduxFlow;

@@ -1,7 +1,8 @@
+import { matchSequenceThrow } from '@nr6/js-utils-array';
+export { MatchSequenceMismatchError, MatchSequencePartialMatchError } from '@nr6/js-utils-array';
 import { createStore, applyMiddleware } from 'redux';
 import Bluebird, { TimeoutError } from 'bluebird';
 import { pipe, assoc, prop, last, pluck, prepend, isNil } from 'ramda';
-import { matchSequenceThrow } from '@nr6/js-utils-array';
 
 /**
  * @typedef {Object} ReduxFlowCoreResult
